@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+CONTAINER=superalgos
+
+docker stop "$CONTAINER"
+docker rm "$CONTAINER"
+## -d to daemonize
+docker run -d \
+    --name "$CONTAINER" \
+    -p 34248:34248 \
+    -p 18041:18041 \
+    --mount type=bind,source="/Users/ptheofan/Sites/docker/superalgos/deployed-app",target=/superalgos \
+    "$CONTAINER":latest

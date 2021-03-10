@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+CONTAINER=superalgos
+docker build -t "$CONTAINER" .

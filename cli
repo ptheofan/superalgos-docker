@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+CONTAINER=superalgos
+docker exec -it "$CONTAINER" bash
