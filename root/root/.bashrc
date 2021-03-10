@@ -98,7 +98,3 @@ fi
 #if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 #    . /etc/bash_completion
 #fi
-
-# export XDEBUG_CONFIG="idekey=PHPSTORM"
-export PHP_IDE_CONFIG="serverName=docker"
-export XDEBUG_SESSION=docker
